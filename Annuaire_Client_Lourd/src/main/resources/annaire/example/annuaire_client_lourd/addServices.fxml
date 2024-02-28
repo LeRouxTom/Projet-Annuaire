@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="annaire.example.annuaire_client_lourd.AddServicesController">
+    <children>
+        <AnchorPane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #0080FF;">
+            <children>
+                <Text layoutX="219.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un service">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="typeSite" layoutX="120.0" layoutY="158.0" prefHeight="26.0" prefWidth="337.0" promptText="Type de service" />
+        <Button fx:id="buttonCancelAddServices" layoutX="172.0" layoutY="240.0" mnemonicParsing="false" onAction="#cancelAndReturnToServicesPage" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: red;" text="Annuler">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button fx:id="buttonValidateAddServices" layoutX="326.0" layoutY="240.0" mnemonicParsing="false" onAction="#addAndReturnToServicesPage" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #32CD32;" text="Confirmer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="annaire.example.annuaire_client_lourd.UpdateSalariesController">
+    <children>
+        <AnchorPane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #0080FF;">
+            <children>
+                <Text layoutX="216.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier un salarié">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+        <TextField fx:id="fieldSearchSalariesById" layoutX="134.0" layoutY="82.0" promptText="Id" />
+        <Button fx:id="buttonsearchById" layoutX="310.0" layoutY="82.0" mnemonicParsing="false" onAction="#searchByIdSalaries" prefHeight="26.0" prefWidth="86.0" text="Rechercher" />
+        <TextField fx:id="fieldEmail" layoutX="109.0" layoutY="232.0" prefHeight="26.0" prefWidth="350.0" promptText="Email" />
+        <Button fx:id="buttonCancelUpdateSalaries" layoutX="173.0" layoutY="342.0" mnemonicParsing="false" onAction="#cancelAndReturnToSalariesPage" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: red;" text="Annuler">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <Button fx:id="buttonUpdateSalaries" layoutX="333.0" layoutY="342.0" mnemonicParsing="false" onAction="#updateAndReturnToSalariesPage" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #32CD32;" text="Confirmer">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+        <TextField fx:id="fieldPrenom" layoutX="109.0" layoutY="143.0" prefHeight="26.0" prefWidth="150.0" promptText="Prénom" />
+        <TextField fx:id="fieldNom" layoutX="310.0" layoutY="143.0" prefHeight="26.0" prefWidth="150.0" promptText="Nom" />
+        <TextField fx:id="fieldFixe" layoutX="109.0" layoutY="187.0" prefHeight="26.0" prefWidth="150.0" promptText="Fixe" />
+        <TextField fx:id="fieldPortable" layoutX="310.0" layoutY="187.0" prefHeight="26.0" prefWidth="150.0" promptText="Portable" />
+        <TextField fx:id="fieldSiteId" layoutX="157.0" layoutY="282.0" prefHeight="26.0" prefWidth="112.0" promptText="Id site" />
+        <TextField fx:id="fieldServiceId" layoutX="317.0" layoutY="282.0" prefHeight="26.0" prefWidth="112.0" promptText="Id service" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: "jdbc:mariadb://localhost:3307/annuaire"
+    username: "root"
+    password: "Tomkelig1522"
+server:
+  port: 5678

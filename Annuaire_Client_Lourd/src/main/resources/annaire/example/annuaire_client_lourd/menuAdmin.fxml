@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="783" prefWidth="1535" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="annaire.example.annuaire_client_lourd.MenuAdminController">
+    <children>
+        <AnchorPane prefHeight="91.0" prefWidth="1535.0" style="-fx-background-color: #0080FF;">
+            <children>
+                <Text layoutX="124.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annuaire Téléphonique">
+                    <font>
+                        <Font name="Calibri Bold" size="28.0" />
+                    </font>
+                </Text>
+                <Button fx:id="buttonSalariesAdmin" layoutX="580.0" layoutY="20.0" mnemonicParsing="false" onAction="#goToSalariesAdmin" prefHeight="50.0" prefWidth="154.0" style="-fx-background-color: #0080FF;" text="Salaries">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font></Button>
+                <Button fx:id="buttonSitesAdmin" layoutX="827.0" layoutY="21.0" mnemonicParsing="false" onAction="#goToSitesAdmin" prefHeight="50.0" prefWidth="138.0" style="-fx-background-color: #0080FF;" text="Sites">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font></Button>
+                <Button fx:id="buttonServicesAdmin" layoutX="1027.0" layoutY="19.0" mnemonicParsing="false" onAction="#goToServicesAdmin" prefHeight="50.0" prefWidth="164.0" style="-fx-background-color: #0080FF;" text="Services">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font></Button>
+            <ImageView fitHeight="60.0" fitWidth="62.0" layoutX="34.0" layoutY="14.0">
+               <image>
+                  <Image url="@../../../image/phone.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="38.0" layoutX="580.0" layoutY="22.0" opacity="0.73">
+               <image>
+                  <Image url="@../../../image/salarie.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="1027.0" layoutY="23.0">
+               <image>
+                  <Image url="@../../../image/service.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="38.0" layoutX="827.0" layoutY="22.0">
+               <image>
+                  <Image url="@../../../image/site.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttonQuitAdmin" layoutX="1425.0" layoutY="11.0" mnemonicParsing="false" onAction="#QuitAdmin" prefHeight="66.0" prefWidth="77.0" style="-fx-background-color: #0080FF;">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="44.0" opacity="0.78">
+                     <image>
+                        <Image url="@../../../image/close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

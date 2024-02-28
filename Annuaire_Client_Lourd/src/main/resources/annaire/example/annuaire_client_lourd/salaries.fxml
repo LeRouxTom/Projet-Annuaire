@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane onKeyPressed="#password" prefHeight="783" prefWidth="1535" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="annaire.example.annuaire_client_lourd.SalariesController">
+   <children>
+       <AnchorPane prefHeight="91.0" prefWidth="1535.0" style="-fx-background-color: #0080FF;">
+           <children>
+               <Text layoutX="124.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Annuaire Téléphonique">
+                   <font>
+                       <Font name="Calibri" size="28.0" />
+                   </font>
+               </Text>
+               <ImageView fitHeight="60.0" fitWidth="62.0" layoutX="34.0" layoutY="14.0">
+                   <image>
+                       <Image url="@../../../image/phone.png" />
+                   </image>
+               </ImageView>
+           </children>
+       </AnchorPane>
+      <TableView fx:id="salariesTable" layoutX="7.0" layoutY="267.0" prefHeight="510.0" prefWidth="1520.0">
+        <columns>
+          <TableColumn fx:id="id_salarie" prefWidth="77.59997272491455" text="Id_salarie" />
+          <TableColumn fx:id="prenomColumn" prefWidth="150.0" text="Prenom" />
+            <TableColumn fx:id="nomColumn" prefWidth="150.0" text="Nom" />
+            <TableColumn fx:id="fixeColumn" prefWidth="228.7999267578125" text="Fixe" />
+            <TableColumn fx:id="portableColumn" prefWidth="229.60003662109375" text="Portable" />
+            <TableColumn fx:id="emailColumn" prefWidth="164.0001220703125" text="Email" />
+            <TableColumn fx:id="typeServiceColumn" minWidth="0.0" prefWidth="173.60003662109375" text="Type de service" />
+            <TableColumn fx:id="typeSiteColumn" minWidth="0.0" prefWidth="141.5999755859375" text="Type de site" />
+            <TableColumn fx:id="villeColumn" minWidth="0.0" prefWidth="203.199951171875" text="Ville" />
+        </columns>
+      </TableView>
+       <TextField fx:id="fieldPrenom" layoutX="350.0" layoutY="178.0" prefHeight="43.0" prefWidth="230.0" promptText="Prénom">
+           <font>
+               <Font size="14.0" />
+           </font></TextField>
+       <Button fx:id="searchButton" layoutX="1272.0" layoutY="178.0" mnemonicParsing="false" onAction="#search" prefHeight="43.0" prefWidth="114.0" text="Rechercher" />
+       <TextField fx:id="fieldTypeService" layoutX="650.0" layoutY="178.0" prefHeight="43.0" prefWidth="230.0" promptText="Type de service">
+           <font>
+               <Font size="14.0" />
+           </font></TextField>
+       <TextField fx:id="fieldTypeSite" layoutX="950.0" layoutY="178.0" prefHeight="43.0" prefWidth="230.0" promptText="Type de site">
+           <font>
+               <Font size="14.0" />
+           </font></TextField>
+      <TextField fx:id="fieldIdSalaries" layoutX="50.0" layoutY="178.0" prefHeight="43.0" prefWidth="230.0" promptText="Id du salarié">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

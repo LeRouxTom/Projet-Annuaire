@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="annaire.example.annuaire_client_lourd.FicheSalariesController">
+   <children>
+      <AnchorPane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: #0080FF;">
+         <children>
+            <Text layoutX="231.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fiche du salarié">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="fieldId" editable="false" layoutX="51.0" layoutY="81.0" prefHeight="26.0" prefWidth="91.0" />
+      <TextField fx:id="fieldPrenom" editable="false" layoutX="346.0" layoutY="130.0" />
+      <TextField fx:id="fieldNom" editable="false" layoutX="97.0" layoutY="130.0" />
+      <TextField fx:id="fieldFixe" editable="false" layoutX="346.0" layoutY="181.0" />
+      <TextField fx:id="fieldPortable" editable="false" layoutX="97.0" layoutY="181.0" />
+      <TextField fx:id="fieldEmail" editable="false" layoutX="97.0" layoutY="236.0" />
+      <TextField fx:id="fieldTypeService" editable="false" layoutX="97.0" layoutY="289.0" />
+      <TextField fx:id="fieldTypeSite" editable="false" layoutX="346.0" layoutY="289.0" />
+      <TextField fx:id="fieldVille" editable="false" layoutX="346.0" layoutY="236.0" />
+      <Button fx:id="returnPageSalaries" layoutX="263.0" layoutY="349.0" mnemonicParsing="false" onAction="#cancelAndReturnToSitesPage" prefHeight="27.0" prefWidth="73.0" style="-fx-border-color: black; -fx-background-color: white;" text="Retour" />
+      <Text layoutX="22.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Id">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="51.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" />
+      <Text layoutX="42.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Portable" />
+      <Text layoutX="50.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="10.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type de service" />
+      <Text layoutX="268.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type de site" />
+      <Text layoutX="300.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ville" />
+      <Text layoutX="301.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fixe" />
+      <Text layoutX="290.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom" />
+   </children>
+</AnchorPane>
